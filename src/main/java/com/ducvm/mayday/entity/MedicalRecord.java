@@ -10,19 +10,7 @@ import java.time.Instant;
 import java.time.LocalDate;
 
 @Entity
-@Table(
-		name = "hosobenhan",
-		uniqueConstraints = {
-				@UniqueConstraint(
-						name = "uq_hoso_benhnhan",
-						columnNames = {"ma_ho_so", "ma_benh_nhan"}
-				),
-				@UniqueConstraint(
-						name = "uq_hosobenhan_ma_loai",
-						columnNames = {"ma_ho_so", "loai_benh_an"}
-				)
-		}
-)
+@Table(name = "hosobenhan")
 @Getter
 @Setter
 public class MedicalRecord {
